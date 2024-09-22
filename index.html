@@ -5,49 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Тестовое 1С Рарус Электросити</title>
     <link rel="stylesheet" href="css/main.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Rosario:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="app">
       <header class="header">
-        <div class="header_banner banner">
-          <a href="#">
-            <i class=""></i>
-            г. Рязань
-          </a>
-          <a href="#">
-            <i class=""></i>
-            Магазины
-          </a>
-          <a href="#">
-            <i class=""></i>
-            8 (800) 000 00 00
-          </a>
+        <div class="header__banner banner">
+          <div class="left">
+            <a href="#">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>г. Рязань</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-store"></i>
+              <span>Магазины</span>
+            </a>
+          </div>
+          <div class="right">
+            <a href="#">
+              <i class="fa-solid fa-phone"></i>
+              <span>8 (800) 000 00 00</span>
+            </a>
+          </div>
         </div>
-        <div class="header__nav nav">
+        <nav class="header__nav nav">
           <a href="#">ЭЛЕКТРОСИТИ</a>
           <div class="nav__searchbar searchbar">
             <i class="fas fa-search searchbar__icon"></i>
             <input type="input" class="searchbar__input" placeholder="Поиск среди товаров" />
           </div>
-        </div>
-        <div class="header__categories categories">
-          <ul class="categories__list">
-            <li class="categories__list-link"><a href="">% Акции</a></li>
-            <li class="categories__list-link"><a href="">Смартфоны</a></li>
-            <li class="categories__list-link"><a href="">Ноутбуки</a></li>
-            <li class="categories__list-link"><a href="">Телевизоры</a></li>
-            <li class="categories__list-link"><a href="">Видеотехника</a></li>
-            <li class="categories__list-link"><a href="">Планшеты</a></li>
-            <li class="categories__list-link"><a href="">Наушники</a></li>
-            <li class="categories__list-link"><a href="">Гейминг</a></li>
-            <li class="categories__list-link"><a href="">Умные часы</a></li>
-            <li class="categories__list-link"><a href="">Моноблоки</a></li>
+          <ul class="nav__links">
+            <li>
+              <a href="#">
+                <i></i>
+                Анастасия
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i></i>
+                Покупки
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i></i>
+                Избранное
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i></i>
+                Корзина
+              </a>
+            </li>
           </ul>
+        </nav>
+        <div class="header__categories categories">
+          <a href="#">% Акции</a>
+          <a href="#">Смартфоны</a>
+          <a href="#">Ноутбуки</a>
+          <a href="#">Телевизоры</a>
+          <a href="#">Видеотехника</a>
+          <a href="#">Планшеты</a>
+          <a href="#">Наушники</a>
+          <a href="#">Гейминг</a>
+          <a href="#">Умные часы</a>
+          <a href="#">Моноблоки</a>
         </div>
       </header>
-      <main class="main"></main>
-      <footer class="footer"></footer>
+      <main class="main">
+        <div class="main__card card">
+          <div class="card-content">
+            <div class="card-text">
+              <h2 class="card-title">Title</h2>
+              <p class="card-subtitle">Subtitle</p>
+            </div>
+            <div class="card-image">
+              <img src="https://via.placeholder.com/150" alt="Placeholder Image" />
+            </div>
+          </div>
+        </div>
+        <h1>Скидки до 70% на товары для гейминга</h1>
+        <h2>c 8 октября до 26 октября</h2>
+        <p>
+          В период с 8 по 26 октября не пропустите скидки до 70% товары для геймеров. Выбирайте товары из акционного
+          списка и при оформлении заказа укажите промокод "GAMER" для активации скидки.
+        </p>
+        <p>
+          Цены снижены на компьютеры, ноутбуки, ЖК мониторы, наушники, игровые кресла, геймпады, компьютерные мыши,
+          клавиатуры, коврики для мыши.
+        </p>
+        <p>
+          Купите товары для геймеров со скидкой до 70%, гарантией и доставкой в интернет-магазине ЭЛЕКТРОСИТИ. Выгодные
+          цены на товары для геймеров на electrocity.ru!
+        </p>
+      </main>
+      <footer class="footer">
+        <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+        <div class="contact">
+          <a href="#">
+            <i class="fa-solid fa-phone"></i>
+            8 (800) 000 00 00
+          </a>
+          <a href="mailto:info@electrocity.ru">electrocity.ru</a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
