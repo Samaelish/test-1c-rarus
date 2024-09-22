@@ -115,6 +115,9 @@
   color: #e60012;
 }
 
+.main {
+  margin-bottom: 5rem;
+}
 .main__card {
   display: flex;
   align-items: center;
@@ -184,6 +187,10 @@
 }
 .footer__wrapper {
   width: 60vw;
+}
+.footer__wrapper img {
+  margin-right: 0.438rem;
+  transform: translateY(3px);
 }
 .footer__navcontact {
   display: flex;
