@@ -9,6 +9,10 @@
 
   &__wrapper {
     width: 60vw;
+    & img {
+      margin-right: 0.438rem;
+      transform: translateY(3px);
+    }
   }
   &__navcontact {
     display: flex;
