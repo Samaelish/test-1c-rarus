@@ -196,7 +196,7 @@
   transition: color 0.2s ease;
 }
 .footer a:hover {
-  color: #e60012;
+  color: #e11c4b;
 }
 .footer__copyrightsocial {
   display: flex;
@@ -209,15 +209,22 @@
   display: flex;
 }
 .footer__social a {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  margin: 0 10px;
   color: #8d8d8d;
-  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   border: 1px solid #8d8d8d;
   border-radius: 50%;
+  text-align: center;
   background-color: #fff;
+}
+.footer__social a:hover {
+  color: #e11c4b;
+  border: 1px solid #e11c4b;
 }
 
 * {
