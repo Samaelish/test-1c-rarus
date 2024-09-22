@@ -5,70 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Тестовое 1С Рарус Электросити</title>
     <link rel="stylesheet" href="css/main.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Rosario:ital,wght@0,300..700;1,300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rosario:wght@700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <div class="banner">
+      <div class="banner__wrapper">
+        <div>
+          <a href="#">
+            <img src="./assets/geo-location.svg" alt="geolocation icon" />
+            <span>г. Рязань</span>
+          </a>
+          <a href="#">
+            <img src="./assets/shop.svg" alt="shop icon" />
+            <span>Магазины</span>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="./assets/phone.svg" alt="phone icon" />
+            <span>8 (800) 000 00 00</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <div class="app">
       <header class="header">
-        <div class="header__banner banner">
-          <div class="left">
-            <a href="#">
-              <i class="fa-solid fa-location-dot"></i>
-              <span>г. Рязань</span>
-            </a>
-            <a href="#">
-              <i class="fa-solid fa-store"></i>
-              <span>Магазины</span>
-            </a>
+        <nav class="header__navbar">
+          <a href="#" class="header__logo">ЭЛЕКТРОСИТИ</a>
+          <div class="header__search">
+            <img src="./assets/search.svg" alt="shop icon" />
+            <input type="text" placeholder="Поиск среди товаров" />
           </div>
-          <div class="right">
-            <a href="#">
-              <i class="fa-solid fa-phone"></i>
-              <span>8 (800) 000 00 00</span>
-            </a>
+          <div class="header__navlinks">
+            <div>
+              <img src="./assets/profile.svg" alt="shop icon" />
+              <a href="#">Анастасия</a>
+            </div>
+            <div>
+              <img src="./assets/purchased.svg" alt="shop icon" />
+              <a href="#">Покупки</a>
+            </div>
+            <div>
+              <img src="./assets/favorite.svg" alt="shop icon" />
+              <a href="#">Избранное</a>
+            </div>
+            <div>
+              <img src="./assets/trashbin.svg" alt="shop icon" />
+              <a href="#">Корзина</a>
+            </div>
           </div>
-        </div>
-        <nav class="header__nav nav">
-          <a href="#">ЭЛЕКТРОСИТИ</a>
-          <div class="nav__searchbar searchbar">
-            <i class="fas fa-search searchbar__icon"></i>
-            <input type="input" class="searchbar__input" placeholder="Поиск среди товаров" />
-          </div>
-          <ul class="nav__links">
-            <li>
-              <a href="#">
-                <i></i>
-                Анастасия
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i></i>
-                Покупки
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i></i>
-                Избранное
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i></i>
-                Корзина
-              </a>
-            </li>
-          </ul>
         </nav>
-        <div class="header__categories categories">
+        <div class="header__categories">
           <a href="#">% Акции</a>
           <a href="#">Смартфоны</a>
           <a href="#">Ноутбуки</a>
@@ -82,47 +73,65 @@
         </div>
       </header>
       <main class="main">
-        <div class="main__card card">
-          <div class="card-content">
-            <div class="card-text">
-              <h2 class="card-title">Title</h2>
-              <p class="card-subtitle">Subtitle</p>
-            </div>
-            <div class="card-image">
-              <img src="https://via.placeholder.com/150" alt="Placeholder Image" />
-            </div>
+        <div class="main__card">
+          <div class="main__cardtext">
+            <h1>
+              Суперскидки <br />на товары<br />
+              для гейминга
+            </h1>
+            <p>с 8 октября до 26 октября</p>
+          </div>
+          <div class="main__cardimage">
+            <img alt="Purple gamepad" height="350" src="assets/gamepad.svg" width="350" />
+            <img alt="Pink handheld gaming console" height="350" src="assets/console.svg" width="350" />
+            <img alt="Gaming headset with RGB lighting" height="350" src="assets/headphones.svg" width="350" />
           </div>
         </div>
-        <h1>Скидки до 70% на товары для гейминга</h1>
-        <h2>c 8 октября до 26 октября</h2>
-        <p>
+        <h2 class="main__heading">Скидки до 70% на товары для гейминга</h2>
+        <p class="main__date">с 8 октября до 26 октября</p>
+        <p class="main__description">
           В период с 8 по 26 октября не пропустите скидки до 70% товары для геймеров. Выбирайте товары из акционного
           списка и при оформлении заказа укажите промокод "GAMER" для активации скидки.
         </p>
-        <p>
+        <p class="main__description">
           Цены снижены на компьютеры, ноутбуки, ЖК мониторы, наушники, игровые кресла, геймпады, компьютерные мыши,
           клавиатуры, коврики для мыши.
         </p>
-        <p>
+        <p class="main__description">
           Купите товары для геймеров со скидкой до 70%, гарантией и доставкой в интернет-магазине ЭЛЕКТРОСИТИ. Выгодные
           цены на товары для геймеров на electrocity.ru!
         </p>
       </main>
-      <footer class="footer">
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-        <div class="contact">
-          <a href="#">
-            <i class="fa-solid fa-phone"></i>
-            8 (800) 000 00 00
-          </a>
-          <a href="mailto:info@electrocity.ru">electrocity.ru</a>
-        </div>
-      </footer>
     </div>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__navcontact">
+          <div class="footer__nav">
+            <a href="#">Главная</a>
+            <a href="#">Акции</a>
+            <a href="#">Магазины</a>
+            <a href="#">Профиль</a>
+          </div>
+          <div class="footer__contact">
+            <a href="#">
+              <img src="./assets/phone.svg" alt="phone icon" />
+              <span>8 (800) 000 00 00</span>
+            </a>
+            <a href="mailto:info@electrocity.ru">
+              <img src="./assets/mail.svg" alt="phone icon" />
+              <span>electrocity.ru</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer__copyrightsocial">
+          <div class="footer__copyright">© 2014-2021 «ЭЛЕКТРОСИТИ». Все права защищены</div>
+          <div class="footer__social">
+            <a href="#"><img src="assets/vkicon.svg" alt="vk icon" /></a>
+            <a href="#"><img src="assets/youtubeicon.svg" alt="youtube icon" /></a>
+            <a href="#"><img src="assets/tgicon.svg" alt="telegram icon" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

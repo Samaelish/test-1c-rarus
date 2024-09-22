@@ -1,0 +1,48 @@
+@use './variables';
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f4f4f4;
+
+  &__wrapper {
+    width: 60vw;
+  }
+  &__navcontact {
+    display: flex;
+    justify-content: space-between;
+  }
+  & a {
+    color: variables.$primary-color;
+    margin-right: 0.9375rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #e60012;
+    }
+  }
+  &__copyrightsocial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 0;
+    color: variables.$secondary-color;
+  }
+  &__social {
+    display: flex;
+  }
+  &__social a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: variables.$secondary-color;
+    padding: 10px;
+    border: 1px solid variables.$secondary-color;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+}

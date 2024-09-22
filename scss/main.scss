@@ -1,3 +1,4 @@
+@import './partials/banner';
 @import './partials/header';
 @import './partials/main';
 @import './partials/footer';
@@ -7,4 +8,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.app {
+  width: 60vw;
+  margin: 0 auto;
 }

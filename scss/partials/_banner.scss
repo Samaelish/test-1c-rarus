@@ -1,0 +1,39 @@
+@use './variables';
+
+.banner {
+  margin-bottom: 20px;
+  padding: 0.625rem 1.25rem;
+  border-bottom: 0.125rem solid #e8e8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__wrapper {
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & div {
+      display: flex;
+      align-items: center;
+
+      & img {
+        margin-right: 0.438rem;
+        transform: translateY(3px);
+      }
+
+      & a {
+        color: variables.$primary-color;
+        margin-right: 0.9375rem;
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: #e60012;
+        }
+      }
+    }
+  }
+  @media (max-width: 428px) {
+    display: none;
+  }
+}
