@@ -2,7 +2,9 @@
 
 .header {
   margin-bottom: 32px;
-
+  display: flex;
+  flex-direction: column;
+  
   // Navbar styles
   &__navbar {
     display: flex;
@@ -21,7 +23,7 @@
   }
 
   &__search {
-    flex: 1;
+    width: 100%;
     margin-left: 55px;
     position: relative;
 
@@ -56,6 +58,7 @@
   &__navlinks {
     display: flex;
     gap: 1.5rem;
+
     & a {
       display: flex;
       flex-direction: column;
@@ -77,6 +80,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.75rem;
+    overflow: hidden;
 
     & a {
       color: #666;

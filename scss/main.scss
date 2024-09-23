@@ -5,13 +5,17 @@
 @import './partials/variables';
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  border: 1px solid lightcoral;
 }
+
+html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+
 .app {
   width: 60vw;
   margin: 0 auto;
