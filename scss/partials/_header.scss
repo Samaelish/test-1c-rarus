@@ -57,8 +57,9 @@
 
   &__navlinks {
     display: flex;
-    gap: 1.5rem;
-
+    gap: calc(min(max(0.15rem, 1vw), 1.5rem));
+    font-size: 1rem;
+    
     & a {
       display: flex;
       flex-direction: column;
@@ -94,7 +95,7 @@
       }
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1280px) {
     &__search {
       margin-inline: 25px;
     }

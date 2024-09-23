@@ -91,7 +91,8 @@
 }
 .header__navlinks {
   display: flex;
-  gap: 1.5rem;
+  gap: min(max(0.15rem, 1vw), 1.5rem);
+  font-size: 1rem;
 }
 .header__navlinks a {
   display: flex;
@@ -121,7 +122,7 @@
 .header__categories a:hover, .header__categories a:focus {
   color: #e60012;
 }
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   .header__search {
     margin-inline: 25px;
   }
@@ -280,7 +281,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid lightcoral;
 }
 
 html,
@@ -290,11 +290,11 @@ body {
 }
 
 .app {
-  width: 60vw;
+  max-width: 60vw;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
   .app {
-    width: 90vw;
+    max-width: 90vw;
   }
 }/*# sourceMappingURL=main.css.map */
