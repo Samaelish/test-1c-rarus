@@ -7,11 +7,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   &__wrapper {
     width: 60vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     & div {
       display: flex;
       align-items: center;
@@ -31,12 +33,12 @@
         }
         &:hover,
         &:focus {
-          color: #e60012;
+          color: variables.$accent-color;
         }
       }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1280px) {
       width: 90vw;
     }
   }

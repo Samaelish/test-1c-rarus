@@ -19,7 +19,7 @@ body {
 .app {
   max-width: 60vw;
   margin: 0 auto;
-  @media (max-width: 768px) {
+  @media (max-width: 1280px) {
     max-width: 90vw;
   }
 }

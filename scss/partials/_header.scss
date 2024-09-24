@@ -4,26 +4,34 @@
   margin-bottom: 32px;
   display: flex;
   flex-direction: column;
-  
+
   // Navbar styles
   &__navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+
+    @media (max-width: 428px) {
+      margin-top: 20px;
+    }
   }
 
   &__logo {
-    font-family: 'Rosario', sans-serif;
+    font-family: variables.$font-secondary;
     font-size: 22px;
     font-weight: bold;
     color: variables.$accent-color;
     text-decoration: none;
     letter-spacing: 5px;
+
+    @media (max-width: 428px) {
+    }
   }
 
   &__search {
-    width: 100%;
+    flex: 1;
     margin-left: 55px;
     position: relative;
 
@@ -53,13 +61,15 @@
       transform: translateY(-50%);
       color: variables.$accent-color;
     }
+    @media (max-width: 428px) {
+      order: 3;
+    }
   }
 
   &__navlinks {
     display: flex;
-    gap: calc(min(max(0.15rem, 1vw), 1.5rem));
-    font-size: 1rem;
-    
+    gap: 1.5rem;
+
     & a {
       display: flex;
       flex-direction: column;
@@ -67,16 +77,20 @@
       text-decoration: none;
       color: variables.$primary-color;
       transition: all 0.2s ease;
+
       &:hover,
       &:focus {
         color: variables.$accent-color;
+      }
+
+      &:last-child {
+        display: none;
       }
     }
   }
 
   // Categories styles
   &__categories {
-    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,20 +98,21 @@
     overflow: hidden;
 
     & a {
-      color: #666;
+      color: variables.$primary-color;
       text-decoration: none;
       margin-right: 20px;
       transition: color 0.2s ease;
+      text-wrap: nowrap;
 
       &:hover,
       &:focus {
-        color: #e60012;
+        color: variables.$accent-color;
       }
     }
   }
   @media (max-width: 1280px) {
     &__search {
-      margin-inline: 25px;
+      margin-inline: 15px;
     }
     &__navlinks a p {
       display: none;

@@ -8,7 +8,10 @@
   background-color: #f4f4f4;
 
   &__wrapper {
-    width: 60vw;
+    min-width: 60vw;
+    @media (max-width: 1280px) {
+      width: 90vw;
+    }
 
     & img {
       margin-right: 0.438rem;
@@ -62,11 +65,5 @@
   }
   &__copyright {
     font-size: 14px;
-  }
-
-  @media (max-width: 768px) {
-    &__wrapper {
-      width: 90vw;
-    }
   }
 }
