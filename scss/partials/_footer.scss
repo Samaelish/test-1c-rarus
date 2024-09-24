@@ -66,4 +66,10 @@
   &__copyright {
     font-size: 14px;
   }
+
+  @media (max-width: 428px) {
+    &__contact a {
+      display: block;
+    }
+  }
 }
