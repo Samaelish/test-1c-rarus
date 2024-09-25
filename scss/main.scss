@@ -24,28 +24,11 @@ a {
   color: #06c;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* Lists */
-ul,
-ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
 /* Images */
 img {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  display: block;
 }
 
 /* Other */
@@ -60,9 +43,6 @@ select {
   border: none;
 }
 
-button[type='submit'] {
-  cursor: pointer;
-}
 
 .app {
   max-width: 60vw;
